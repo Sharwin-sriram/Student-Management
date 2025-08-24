@@ -40,9 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'LOGIN',
-    'STUDENT',
-    'TEACHER',
-    'ADMIN'
+    #'STUDENT',
+    #'TEACHER',
+    #'ADMIN'
 ]
 
 MIDDLEWARE = [
@@ -60,7 +60,7 @@ ROOT_URLCONF = 'SMS.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,"static/templates")],
+        'DIRS': [os.path.join(BASE_DIR.parent,"static/templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
